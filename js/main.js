@@ -135,7 +135,31 @@ function zoomInYZoomOut(){
     let titulo = document.getElementById("titulo");
     elemento.classList.toggle("zoomInYZoomOut");
     if (titulo.textContent == "Figura") {
-        titulo.textContent = "Figura : Zoom In / Zoom Out"
+        titulo.textContent = "Figura : Zoom In / Zoom Out";
+    }
+        else {
+            titulo.textContent = "Figura"
+        }
+}
+
+function leftToRight(){
+    let elemento = document.getElementById("figura");
+    let titulo = document.getElementById("titulo");
+    elemento.classList.toggle("leftToRight");
+    if (titulo.textContent == "Figura") {
+        titulo.textContent = "Figura : Mov Left to Right";
+    }
+        else {
+            titulo.textContent = "Figura"
+        }
+}
+
+function colors(){
+    let elemento = document.getElementById("figura");
+    let titulo = document.getElementById("titulo");
+    elemento.classList.toggle("colors");
+    if (titulo.textContent == "Figura") {
+        titulo.textContent = "Figura : Cambio de Colores";
     }
         else {
             titulo.textContent = "Figura"

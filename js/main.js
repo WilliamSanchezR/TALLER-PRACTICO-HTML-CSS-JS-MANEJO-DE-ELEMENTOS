@@ -141,17 +141,3 @@ function zoomInYZoomOut(){
             titulo.textContent = "Figura"
         }
 }
-
-function zoomInYZoomt() {
-    let elemento = document.getElementById("figura");
-    let titulo = document.getElementById("titulo");
-    let scale = 1;
-    scale += 0.1; // Aumenta el zoom
-    elemento.style.transform = `scale(${scale})`;
-    titulo.textContent = "Figura : Zoom In / Zoom Out";
-    if (scale > 0.5) { // Limite mínimo
-        scale -= 0.1; // Reduce el zoom
-        elemento.style.transform = `scale(${scale})`;
-    }
-    titulo.textContent = "Figura : Zoom In / Zoom Out";
-}
